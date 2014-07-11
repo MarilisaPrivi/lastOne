@@ -8,6 +8,9 @@ function mostra(){
 function mostra2(){
 	window.location = "modifica.htm"; 
 }
+function mostra3(){
+	window.location = "visualizza.htm"; 
+}
 </script>
     <title>Spring MVC</title>
 </head>
@@ -20,9 +23,13 @@ function mostra2(){
         
        <p align="center"> <input type="button" value="Inserisci" style="height:50px; width:250px" onclick="mostra()" /></p>
         </div>
-        <br>
+        
         <div>
        <p align="center"> <input type="button" value="Modifica" style="height:50px; width:250px" onclick="mostra2()" /></p>
+        
+    </div>
+    <div>
+       <p align="center"> <input type="button" value="Visualizza" style="height:50px; width:250px" onclick="mostra3()" /></p>
         
     </div>
     <br>

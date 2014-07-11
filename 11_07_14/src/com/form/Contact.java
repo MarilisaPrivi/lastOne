@@ -37,7 +37,7 @@ public class Contact {
     
     public void AggiungiContatto(){
     	contatti.add(this);
-    	
+    	System.out.println("Hai inserito");
     	for(int i=0;i<contatti.size();i++){
     		System.out.println("Nome: "+contatti.get(i).firstname+"\nCognome: "+contatti.get(i).lastname);
     		System.out.println("email: "+contatti.get(i).email+"\nTelefono: "+contatti.get(i).telephone);
@@ -50,17 +50,21 @@ public class Contact {
     				&& contatti.get(i).getLastname().equals(this.getLastname())) {
     			contatti.get(i).setTelephone(this.getTelephone());
     			System.out.println("modifica effettuata");
-    		}
     			
+    		}
+    		
     	}
     	
-    	/*int i = 0;
-    	while(!this.getFirstname().equals(contatti.get(i).getFirstname()) 
-    			|| !this.getLastname().equals(contatti.get(i).getLastname())
-    			&& i > contatti.size())
-    		i++;
+    }
     	
-    	contatti.get(i).setTelephone(this.getTelephone());*/
+    	public void VisualizzaContatti(){
+    		for(int j=0;j<contatti.size();j++){
+    			System.out.println("Nome: "+contatti.get(j).getFirstname());
+    			System.out.println("Cognome: "+contatti.get(j).getLastname());
+    			System.out.println("Nome: "+contatti.get(j).getTelephone());
+    			
+    		}
+    	}
+    	
     }
     
-}
