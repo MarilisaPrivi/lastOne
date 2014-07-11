@@ -16,6 +16,10 @@
         <td><form:label path="lastname">Cognome</form:label></td>
         <td><form:input path="lastname" /></td>
     </tr>
+     <tr>
+        <td><form:label path="telephone">telefono</form:label></td>
+        <td><form:input path="telephone" /></td>
+    </tr>
     <tr>
         <td colspan="2">
             <input type="submit" value="Modifica"/>

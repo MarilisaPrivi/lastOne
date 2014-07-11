@@ -45,7 +45,22 @@ public class Contact {
     }
 
     public void ModificaContatto(){
-    	System.out.println("ciao");
+    	for(int i = 0; i < contatti.size(); i++) {
+    		if(contatti.get(i).getFirstname().equals(this.getFirstname())
+    				&& contatti.get(i).getLastname().equals(this.getLastname())) {
+    			contatti.get(i).setTelephone(this.getTelephone());
+    			System.out.println("modifica effettuata");
+    		}
+    			
+    	}
+    	
+    	/*int i = 0;
+    	while(!this.getFirstname().equals(contatti.get(i).getFirstname()) 
+    			|| !this.getLastname().equals(contatti.get(i).getLastname())
+    			&& i > contatti.size())
+    		i++;
+    	
+    	contatti.get(i).setTelephone(this.getTelephone());*/
     }
     
 }
