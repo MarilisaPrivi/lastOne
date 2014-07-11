@@ -35,6 +35,10 @@ public class Contact {
         this.telephone = telephone;
     }
     
+    public ArrayList<Contact> getContatti() {
+    	return contatti;
+    }
+    
     public void AggiungiContatto(){
     	contatti.add(this);
     	System.out.println("Hai inserito");
