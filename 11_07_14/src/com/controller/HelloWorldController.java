@@ -1,4 +1,4 @@
-package net.viralpatel.spring3.controller;
+package com.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ public class HelloWorldController {
     @RequestMapping("/hello")
     public ModelAndView helloWorld() {
  
-        String message = "Hello World, Spring 3.0!";
+        String message = "Hello World";
         return new ModelAndView("hello", "message", message);
     }
 }

@@ -1,4 +1,4 @@
-package net.viralpatel.spring3.form;
+package com.form;
 
 public class Contact {
     private String firstname;
