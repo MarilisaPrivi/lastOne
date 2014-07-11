@@ -3,7 +3,7 @@
 <head>
     <title>Spring MVC</title>
 </head>
-<body bgcolor="yellow">
+<body bgcolor="skyblue">
 <h2>Aggiungi Contatto</h2>
 <form:form method="post" action="addContact.htm">
  

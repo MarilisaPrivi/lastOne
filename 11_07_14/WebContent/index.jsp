@@ -3,10 +3,10 @@
 <head>
 <script type="text/javascript">
 function mostra(){
-	window.location = "contacts.html"; 
+	window.location = "contacts.htm"; 
 }
 function mostra2(){
-	window.location = "www.staiapezzi.com"; 
+	window.location = "modifica.htm"; 
 }
 </script>
     <title>Spring MVC</title>
