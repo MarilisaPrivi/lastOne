@@ -3,9 +3,9 @@
 <head>
     <title>Spring MVC</title>
 </head>
-<body>
+<body bgcolor="yellow">
 <h2>Aggiungi Contatto</h2>
-<form:form method="post" action="addContact.html">
+<form:form method="post" action="addContact.htm">
  
     <table>
     <tr>
@@ -29,8 +29,7 @@
             <input type="submit" value="Aggiungi"/>
         </td>
     </tr>
-</table> 
- 
+	</table>
 </form:form>
 </body>
 </html>

@@ -20,12 +20,26 @@ public class ContactController {
  
         contact.AggiungiContatto();
  
-        return "redirect:contacts.html";
+        return "redirect:index.jsp";
+    }
+    
+    @RequestMapping(value = "/modifyContact", method = RequestMethod.POST)
+    public String modifyContact(@ModelAttribute("modifica")Contact contact) {
+
+    	contact.ModificaContatto();
+
+    	return "redirect:index.jsp";
     }
  
     @RequestMapping("/contacts")
     public ModelAndView showContacts() {
  
         return new ModelAndView("contact", "command", new Contact());
+    }
+    
+    @RequestMapping("/modifica")
+    public ModelAndView showModif() {
+ 
+        return new ModelAndView("modifica", "command", new Contact());
     }
 }

@@ -5,9 +5,9 @@
 </head>
 <body bgcolor="yellow"> 
     <div>
-        <a href="contacts.html">Inserisci</a>
+        <a href="contacts.htm">Inserisci</a>
         <br>
-        <a href="modifica.html">Modifica</a>
+        <a href="modifica.htm">Modifica</a>
         
     </div>
 </body>

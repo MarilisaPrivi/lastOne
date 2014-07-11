@@ -43,6 +43,9 @@ public class Contact {
     		System.out.println("email: "+contatti.get(i).email+"\nTelefono: "+contatti.get(i).telephone);
     	}
     }
- 
+
+    public void ModificaContatto(){
+    	System.out.println("ciao");
+    }
     
 }
