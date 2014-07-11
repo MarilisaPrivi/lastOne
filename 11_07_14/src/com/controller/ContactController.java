@@ -30,16 +30,7 @@ public class ContactController {
     	contact.ModificaContatto();
 
     	return "redirect:index.jsp";
-    }
-    
-    @RequestMapping(value = "/viewContact", method = RequestMethod.POST)
-    public void viewContact(@ModelAttribute("visualizza")Contact contact, Model model) {
-
-    	contact.VisualizzaContatti();
-    	model.addAttribute(contact.getContatti());
-    	
-    }
-    
+    }    
     
     @RequestMapping("/contacts")
     public ModelAndView showContacts() {
@@ -55,7 +46,11 @@ public class ContactController {
     
     @RequestMapping("/visualizza")
     public ModelAndView Contacts() {
- 
-        return new ModelAndView("visualizza", "command", new Contact());
+    	Contact c = new Contact();
+    	c.setEmail("LOL");
+    	c.AggiungiContatto();
+    	ModelAndView modelAndView = new ModelAndView("visualizza");
+    	modelAndView.addObject("contatti", c.getContatti());
+    	return modelAndView;
     }
 }
