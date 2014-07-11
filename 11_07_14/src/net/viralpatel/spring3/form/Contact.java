@@ -1,10 +1,15 @@
 package net.viralpatel.spring3.form;
 
+import java.util.ArrayList;
+
 public class Contact {
     private String firstname;
     private String lastname;
     private String email;
     private String telephone;
+    
+    ArrayList<Contact> contatti = new ArrayList();
+    
     public String getFirstname() {
         return firstname;
     }
@@ -28,6 +33,14 @@ public class Contact {
     }
     public void setTelephone(String telephone) {
         this.telephone = telephone;
+    }
+    
+    public void AggiungiContatto(){
+    	contatti.add(this);
+    	
+    	for(int i=0;i<contatti.size();i++){
+    		System.out.println(contatti.get(i).firstname+" "+contatti.get(i).lastname);
+    	}
     }
  
 }

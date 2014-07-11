@@ -1,5 +1,7 @@
 package net.viralpatel.spring3.controller;
 
+import java.util.ArrayList;
+
 import net.viralpatel.spring3.form.Contact;
 
 import org.springframework.stereotype.Controller;
@@ -26,8 +28,15 @@ public class ContactController {
     public String addContact(@ModelAttribute("contact")
                             Contact contact, BindingResult result) {
  
-        System.out.println("First Name:" + contact.getFirstname() +
-                    "Last Name:" + contact.getLastname());
+        System.out.println("Nome:" + contact.getFirstname() +
+                    "\nCognome:" + contact.getLastname());
+        System.out.println("email:" + contact.getEmail() +
+                "\nNumero:" + contact.getTelephone());
+        
+       contact.AggiungiContatto();
+       
+       
+        
  
         return "redirect:contacts.html";
     }

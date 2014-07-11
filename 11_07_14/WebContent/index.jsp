@@ -5,7 +5,7 @@
 </head>
 <body>
     <div>
-        <a href="contacts.html">Say Hello</a>
+        <a href="contacts.html">Inserisci</a>
     </div>
 </body>
 </html>
