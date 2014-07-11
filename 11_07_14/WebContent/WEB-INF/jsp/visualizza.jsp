@@ -8,12 +8,17 @@
 <title>Visualizza contatti</title>
 </head>
 <body>
+
+<table border="5px">
 <c:forEach items="${contatti}" var="contact">
-	<c:out value="${contact.firstname}" /><br>
-	<c:out value="${contact.lastname}" /><br>
-	<c:out value="${contact.email}" /><br>
-	<c:out value="${contact.telephone}" /><br>
+<tr>
+	<td><c:out value="${contact.firstname}" /></td>
+	<td><c:out value="${contact.lastname}" /></td>
+	<td><c:out value="${contact.email}" /></td>
+	<td><c:out value="${contact.telephone}" /></td>
 </c:forEach>
+</table>
+
 <a href="index.jsp"> home </a>
 </body>
 </html>

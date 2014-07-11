@@ -47,7 +47,6 @@ public class ContactController {
     @RequestMapping("/visualizza")
     public ModelAndView Contacts() {
     	Contact c = new Contact();
-    	c.setEmail("LOL");
     	c.AggiungiContatto();
     	ModelAndView modelAndView = new ModelAndView("visualizza");
     	modelAndView.addObject("contatti", c.getContatti());
