@@ -1,8 +1,6 @@
 package com.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -47,7 +45,7 @@ public class ContactController {
     @RequestMapping("/visualizza")
     public ModelAndView Contacts() {
     	Contact c = new Contact();
-    	c.AggiungiContatto();
+    	//c.AggiungiContatto();
     	ModelAndView modelAndView = new ModelAndView("visualizza");
     	modelAndView.addObject("contatti", c.getContatti());
     	return modelAndView;
