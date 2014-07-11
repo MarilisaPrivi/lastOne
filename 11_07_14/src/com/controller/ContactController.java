@@ -16,7 +16,7 @@ public class ContactController {
 
     @RequestMapping(value = "/addContact", method = RequestMethod.POST)
     public String addContact(@ModelAttribute("contact")
-                            Contact contact, BindingResult result) {
+                            Contact contact) {
  
         contact.AggiungiContatto();
  

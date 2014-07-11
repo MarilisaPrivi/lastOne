@@ -3,9 +3,12 @@
 <head>
     <title>Spring MVC</title>
 </head>
-<body>
+<body bgcolor="yellow"> 
     <div>
         <a href="contacts.html">Inserisci</a>
+        <br>
+        <a href="modifica.html">Modifica</a>
+        
     </div>
 </body>
 </html>

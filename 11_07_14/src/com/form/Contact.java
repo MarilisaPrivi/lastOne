@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Contact {
 	
-	ArrayList<Contact> contatti = new ArrayList<Contact>();
+	static ArrayList<Contact> contatti = new ArrayList<Contact>();
 	
     private String firstname;
     private String lastname;
