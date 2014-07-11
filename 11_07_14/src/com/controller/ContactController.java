@@ -18,8 +18,7 @@ public class ContactController {
     public String addContact(@ModelAttribute("contact")
                             Contact contact, BindingResult result) {
  
-        System.out.println("First Name:" + contact.getFirstname() +
-                    "Last Name:" + contact.getLastname());
+        contact.AggiungiContatto();
  
         return "redirect:contacts.html";
     }

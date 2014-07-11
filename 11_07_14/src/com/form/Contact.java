@@ -1,6 +1,11 @@
 package com.form;
 
+import java.util.ArrayList;
+
 public class Contact {
+	
+	ArrayList<Contact> contatti = new ArrayList<Contact>();
+	
     private String firstname;
     private String lastname;
     private String email;
@@ -29,5 +34,15 @@ public class Contact {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+    
+    public void AggiungiContatto(){
+    	contatti.add(this);
+    	
+    	for(int i=0;i<contatti.size();i++){
+    		System.out.println("Nome: "+contatti.get(i).firstname+"\nCognome: "+contatti.get(i).lastname);
+    		System.out.println("email: "+contatti.get(i).email+"\nTelefono: "+contatti.get(i).telephone);
+    	}
+    }
  
+    
 }
