@@ -5,7 +5,7 @@
 </head>
 <body bgcolor="skyblue">
 <h2>Modifica Contatto</h2>
-<form:form method="post" action="modifyContact.htm">
+<form:form method="get" action="modifyContact.htm">
  
     <table>
     <tr>

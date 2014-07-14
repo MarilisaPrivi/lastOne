@@ -13,7 +13,7 @@ import com.form.Contact;
 
 public class ModificaController {
 
-	 @RequestMapping(value = "/modifyContact", method = RequestMethod.POST)
+	 @RequestMapping(value = "/modifyContact", method = RequestMethod.GET)
 	    public String modifyContact(@ModelAttribute("modifica")Contact contact) {
 
 	    	contact.ModificaContatto();

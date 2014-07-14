@@ -12,7 +12,7 @@ import com.form.Contact;
 @SessionAttributes
 public class AggiungiController {
 
-    @RequestMapping(value = "/addContact", method = RequestMethod.POST)
+    @RequestMapping(value = "/addContact", method = RequestMethod.GET)
     public String addContact(@ModelAttribute("aggiungi")
                             Contact contact) {
  
