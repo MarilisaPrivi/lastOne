@@ -18,6 +18,7 @@ function home(){
 <h1 align="center">Contatti in rubrica</h1>
 <div align="center">
 <table border="5px">
+<tr><td><b>Nome</b><td><b>Cognome</b><td><b>Email</b><td><b>Telefono</b><tr>
 <c:forEach items="${contatti}" var="contact">
 <tr>
 	<td><c:out value="${contact.firstname}" /></td>

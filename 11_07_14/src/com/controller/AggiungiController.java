@@ -13,7 +13,7 @@ import com.form.Contact;
 public class AggiungiController {
 
     @RequestMapping(value = "/addContact", method = RequestMethod.POST)
-    public String addContact(@ModelAttribute("contact")
+    public String addContact(@ModelAttribute("aggiungi")
                             Contact contact) {
  
         contact.AggiungiContatto();
@@ -21,10 +21,10 @@ public class AggiungiController {
         return "redirect:index.jsp";
     }
     
-    @RequestMapping("/contacts")
+    @RequestMapping("/aggiungi")
     public ModelAndView showContacts() {
  
-        return new ModelAndView("contact", "command", new Contact());
+        return new ModelAndView("aggiungi", "command", new Contact());
     }
 
    

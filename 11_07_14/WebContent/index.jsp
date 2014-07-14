@@ -3,7 +3,7 @@
 <head>
 <script type="text/javascript">
 function mostra(){
-	window.location = "contacts.htm"; 
+	window.location = "aggiungi.htm"; 
 }
 function mostra2(){
 	window.location = "modifica.htm"; 
