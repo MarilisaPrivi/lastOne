@@ -6,9 +6,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Visualizza contatti</title>
-</head>
-<body>
 
+<script type="text/javascript">
+function home(){
+	window.location = "index.jsp"; 
+}
+</script>
+</head>
+
+<body>
+<h1 align="center">Contatti in rubrica</h1>
+<div align="center">
 <table border="5px">
 <c:forEach items="${contatti}" var="contact">
 <tr>
@@ -18,7 +26,12 @@
 	<td><c:out value="${contact.telephone}" /></td>
 </c:forEach>
 </table>
+</div>
 
-<a href="index.jsp"> home </a>
+<div>
+        
+       <p align="center"> <input type="button" value="Pagina iniziale" style="height:50px; width:250px" onclick="home()" /></p>
+        </div>
+
 </body>
 </html>

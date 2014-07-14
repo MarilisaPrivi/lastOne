@@ -7,19 +7,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 import com.form.Contact;
- 
+
 @Controller
 @SessionAttributes
-public class ContactController {
 
-    @RequestMapping(value = "/addContact", method = RequestMethod.POST)
-    public String addContact(@ModelAttribute("contact")
-                            Contact contact) {
- 
-        contact.AggiungiContatto();
- 
-        return "redirect:index.jsp";
-    }
-    
-   
+public class ModificaController {
+
+	 @RequestMapping(value = "/modifyContact", method = RequestMethod.POST)
+	    public String modifyContact(@ModelAttribute("modifica")Contact contact) {
+
+	    	contact.ModificaContatto();
+
+	    	return "redirect:index.jsp";
+	    }    
+	 
+	 @RequestMapping("/modifica")
+	    public ModelAndView showModif() {
+	 
+	        return new ModelAndView("modifica", "command", new Contact());
+	    }
 }
