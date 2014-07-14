@@ -17,7 +17,7 @@ function mostra3(){
 
 <body bgcolor="skyblue"> 
 
-   <fieldset style="background-color:limegreen; border:red; margin:15px">
+   <fieldset style="background-color:limegreen;">
 <legend align="center">RUBRICA</legend>
     <div>
         
@@ -28,6 +28,7 @@ function mostra3(){
        <p align="center"> <input type="button" value="Modifica" style="height:50px; width:250px" onclick="mostra2()" /></p>
         
     </div>
+    
     <div>
        <p align="center"> <input type="button" value="Visualizza" style="height:50px; width:250px" onclick="mostra3()" /></p>
         

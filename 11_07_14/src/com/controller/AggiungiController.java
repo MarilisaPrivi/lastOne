@@ -10,7 +10,7 @@ import com.form.Contact;
  
 @Controller
 @SessionAttributes
-public class ContactController {
+public class AggiungiController {
 
     @RequestMapping(value = "/addContact", method = RequestMethod.POST)
     public String addContact(@ModelAttribute("contact")
@@ -21,5 +21,11 @@ public class ContactController {
         return "redirect:index.jsp";
     }
     
+    @RequestMapping("/contacts")
+    public ModelAndView showContacts() {
+ 
+        return new ModelAndView("contact", "command", new Contact());
+    }
+
    
 }

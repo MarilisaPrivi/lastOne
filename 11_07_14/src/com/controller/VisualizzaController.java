@@ -16,16 +16,10 @@ public class VisualizzaController {
 	 @RequestMapping("/visualizza")
 	    public ModelAndView Contacts() {
 	    	Contact c = new Contact();
-	    	//c.AggiungiContatto();
 	    	ModelAndView modelAndView = new ModelAndView("visualizza");
 	    	modelAndView.addObject("contatti", c.getContatti());
 	    	return modelAndView;
 	    }
 	 
-	 @RequestMapping("/contacts")
-	    public ModelAndView showContacts() {
-	 
-	        return new ModelAndView("contact", "command", new Contact());
-	    }
-
+	
 }
